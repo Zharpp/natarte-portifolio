@@ -1,0 +1,130 @@
+/* ==========================================
+   1. RESET E ESTILOS GERAIS DA PÁGINA
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222222;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   2. CABEÇALHO (HEADER) E LOGO
+   ========================================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-icon {
+    font-size: 1.2rem;
+}
+
+.logo-text {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.logo-subtitle {
+    font-size: 0.8rem;
+    color: #666666;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+/* ==========================================
+   3. MENU DE NAVEGAÇÃO
+   ========================================== */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;                     /* Distância entre as opções */
+}
+
+.nav-menu a {
+    text-decoration: none;        /* Remove o sublinhado azul padrão */
+    font-family: sans-serif;       /* Fonte limpa e sem serifa */
+    font-size: 0.85rem;           /* Tamanho sutil e moderno */
+    letter-spacing: 1.5px;         /* Espaçamento entre as letras */
+    text-transform: uppercase;     /* Transforma os textos em maiúsculas */
+    color: #8c98a6;                /* Tom cinza suave */
+    transition: color 0.2s ease;
+}
+
+/* Efeito ao passar o cursor por cima */
+.nav-menu a:hover {
+    color: #000000;
+}
+
+/* Destaque para a página atual */
+.nav-menu a.active {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* ==========================================
+   4. CONTEÚDO PRINCIPAL (MAIN E SEÇÕES)
+   ========================================== */
+.section {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Galeria em Grid */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card-arte img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.card-arte p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+/* ==========================================
+   5. RODAPÉ (FOOTER)
+   ========================================== */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111111;
+    color: #ffffff;
+}
